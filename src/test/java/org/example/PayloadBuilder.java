@@ -4,7 +4,7 @@ import lombok.Builder;
 import org.json.simple.JSONObject;
 
 //@Builder(toBuilder = true)    //reducing hardcoded values for json object properties/attributes
-public class PayloadBuilder {
+public class PayloadBuilder {     //manual builder pattern
     private JSONObject payload;
     private JSONObject anotherPayload;
 

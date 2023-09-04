@@ -64,6 +64,9 @@ public class DataProviderTests extends DataProviderClass{
         String res= given().get("users/5/").then().statusCode(200).extract().response().asString();
         JsonPath jsonPath = new JsonPath(res);
         System.out.println(jsonPath.getString("firstname"));
+        String name = given().get("users/9").then().statusCode(200).extract().response().asString();
+        JsonPath jsonPath1 = new JsonPath(name);
+        System.out.println(jsonPath1.getString("anotherPayload.lastname"));
     }
 
     @Test(dataProvider = "arrayData")

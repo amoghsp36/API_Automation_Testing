@@ -44,4 +44,13 @@ public class DataProviderClass {
                 4,5,6,7
         };
     }
+
+    @DataProvider(name = "dataForPojoClasses")
+    public Object[][] pojoData(){
+        return new Object[][]{
+                {"alex","mercer",23,89374.34},
+                {"yuji","nishida",20,8374924.39},
+                {"ruka","shirashina",18,8473.84}
+        };
+    }
 }
